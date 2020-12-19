@@ -1,6 +1,8 @@
 DROP TABLE settings;
 CREATE TABLE settings (
   address VARCHAR NOT NULL,
+  brightid_link_status BLOB,
+  brightid_link_error_status BLOB,
   chaos_mode BOOLEAN DEFAULT false,
   currency VARCHAR DEFAULT 'usd',
   current_network VARCHAR NOT NULL,
